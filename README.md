@@ -5,7 +5,8 @@ config files for ***neovim*** and ***tmux***
 ## dependencies
 
 - git
-- fzf
+- fzf (telescope)
+- clangd (lsp)
 
 ## install
 
