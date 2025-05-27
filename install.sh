@@ -5,7 +5,7 @@ cp zshrc ~/.zshrc
 cp tmux.conf ~/.tmux.conf
 
 # install nvim configs
-mkdir -p ~/.config/nvim
+mkdir -p ~/.config
 cp -r nvim ~/.config/nvim
 
 # install tmux theme
