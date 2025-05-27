@@ -1,27 +1,23 @@
-## dotfiles
+# dotfiles
 
-neovim and tmux config files
+config files for ***neovim*** and ***tmux***
+
+## dependencies
+
+- git
+- fzf
+
+## install
+
+to install the configs:
+
+run `./install.sh`  
+open `nvim` and type `q` to continue through the errors  
+run `:PackerSync` to install the plugins, then restart neovim  
 
 
-### install
+## clean
 
-to install the dotfiles, run:
+to remove the neovim plugins and tmux theme, run:
 
-`
-chmod +x install.sh
-./install.sh
-`
-
-run `nvim` and type `q` to continue through the errors
-
-run `:PackerSync` to install the plugins, the restart nvim
-
-
-### clean
-
-to remove the nvim plugins and tmux theme, run:
-
-`
-chmod +x clean.sh
-./clean.sh
-`
+`./clean.sh`  
