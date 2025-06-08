@@ -1,3 +1,3 @@
-require("nvim.remap")
-require("nvim.options")
-require("nvim.lazy")
+require('nvim.remap')
+require('nvim.options')
+require('nvim.lazy')

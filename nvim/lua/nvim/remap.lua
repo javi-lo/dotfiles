@@ -7,4 +7,7 @@ vim.keymap.set('n', ']t', vim.cmd.tabnext, { desc = 'Next tab' })
 vim.keymap.set('n', '<leader>co', vim.cmd.copen, { desc = 'Open quickfix menu' })
 vim.keymap.set('n', '<leader>cc', vim.cmd.cclose, { desc = 'Close quickfix menu' })
 
-vim.keymap.set('n', '<esc>', '<cmd>noh<cr>')
+vim.keymap.set('n', '<c-j>', vim.cmd.cnext, { desc = 'Next quickfix menu item' })
+vim.keymap.set('n', '<c-k>', vim.cmd.cprev, { desc = 'Previous quickfix menu item' })
+
+vim.keymap.set('n', '<esc>', '<cmd>noh<cr>', { desc = 'Clear highlighted text after search' })
