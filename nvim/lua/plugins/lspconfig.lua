@@ -32,6 +32,9 @@ return {
 
     vim.lsp.enable('clangd')
 
+    -- pyright
+    vim.lsp.enable('pyright')
+
     -- luals
     lspconfig.lua_ls.setup {
       on_attach = on_attach,
