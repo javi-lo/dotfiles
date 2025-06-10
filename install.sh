@@ -4,6 +4,7 @@ autoload -Uz compinit && compinit
 
 alias build="cmake -B build && cmake --build build"
 alias clean="git clean -dfX"
+alias cleaner="git clean -dfx"
 EOF
 
 # .tmux.conf setup

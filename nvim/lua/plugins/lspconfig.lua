@@ -32,10 +32,13 @@ return {
 
     vim.lsp.enable('clangd')
 
+    -- cmake language server
+    vim.lsp.enable('cmake')
+
     -- pyright
     vim.lsp.enable('pyright')
 
-    -- luals
+    -- lua language server
     lspconfig.lua_ls.setup {
       on_attach = on_attach,
       capabilities, capabilities,
