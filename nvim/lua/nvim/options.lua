@@ -32,11 +32,4 @@ vim.g.lsp_diagnostics_enabled = 1
 vim.g.lsp_diagnostics_echo_cursor = 1
 
 vim.g.netrw_list_hide = [[\(^\|\s\s\)\zs\.\S\+]]
-
--- read .cc files as .cpp files
-vim.api.nvim_create_autocmd({'BufRead', 'BufNewFile'}, {
-  pattern = '*.cc',
-  callback = function()
-    vim.bo.filetype = 'cpp'
-  end
-})
+vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
