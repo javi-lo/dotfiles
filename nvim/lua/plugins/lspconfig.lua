@@ -22,7 +22,10 @@ return {
       vim.keymap.set('n', '[d',         vim.diagnostic.goto_prev,            opts)
       vim.keymap.set('n', ']d',         vim.diagnostic.goto_next,            opts)
       vim.keymap.set('n', 'gl',         vim.diagnostic.open_float,           opts)
-      vim.keymap.set('n', '<leader>o',  '<cmd>ClangdSwitchSourceHeader<cr>', opts)
+
+      if client.name == 'clangd' then
+        vim.keymap.set('n', '<leader>o',  '<cmd>ClangdSwitchSourceHeader<cr>', opts)
+      end
     end
 
     -- clangd
@@ -47,6 +50,14 @@ return {
       pattern = '[Cc][Mm]ake[Ll]ists.txt',
       callback = function() vim.bo.filetype = 'cmake' end
     })
+
+    -- gopls
+    lspconfig.gopls.setup {
+      on_attach = on_attach,
+      capabilities, capabilities,
+    }
+
+    vim.lsp.enable('gopls')
 
     -- pyright
     vim.lsp.enable('pyright')
