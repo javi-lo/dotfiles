@@ -1,8 +1,10 @@
-# remove nvim plugins
-rm -rf ~/.config/nvim
+# zshrc
+sed -i '/^source .*\/config\/zshrc%/d' ~/.zshrc
 
-# remove packer.nvim
+# neovim
+rm ~/.config/nvim
 rm -rf ~/.local/share/nvim
 
-# remove tmux theme
+# tmux
+rm ~/.tmux.conf
 rm -rf ~/.config/tmux
