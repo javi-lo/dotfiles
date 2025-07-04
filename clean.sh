@@ -1,10 +1,10 @@
 # zshrc
-sed -i '/^source .*\/config\/zshrc%/d' ~/.zshrc
+sed -i '' '/^source .*\/config\/zshrc$/d' ~/.zshrc
 
 # neovim
-rm ~/.config/nvim
+unlink ~/.config/nvim
 rm -rf ~/.local/share/nvim
 
 # tmux
-rm ~/.tmux.conf
+unlink ~/.tmux.conf
 rm -rf ~/.config/tmux
