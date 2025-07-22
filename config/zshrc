@@ -1,3 +1,6 @@
+# rust
+source ~/.cargo/env
+
 alias tn="tmux new nvim ."
 
 alias build="cmake -B build && cmake --build build"

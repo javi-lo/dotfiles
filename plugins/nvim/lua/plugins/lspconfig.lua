@@ -59,6 +59,9 @@ return {
 
     vim.lsp.enable('gopls')
 
+    -- svelte-language-server
+    vim.lsp.enable('svelte')
+
     -- pyright
     vim.lsp.enable('pyright')
 
