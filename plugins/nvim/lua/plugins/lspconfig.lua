@@ -54,10 +54,18 @@ return {
     -- gopls
     lspconfig.gopls.setup {
       on_attach = on_attach,
-      capabilities, capabilities,
+      capabilities = capabilities,
     }
 
     vim.lsp.enable('gopls')
+
+    -- typescript-language-server
+    lspconfig.ts_ls.setup {
+      on_attach = on_attach,
+      capabilities = capabilities
+    }
+
+    vim.lsp.enable('ts_ls')
 
     -- svelte-language-server
     vim.lsp.enable('svelte')
@@ -68,7 +76,7 @@ return {
     -- lua language server
     lspconfig.lua_ls.setup {
       on_attach = on_attach,
-      capabilities, capabilities,
+      capabilities = capabilities,
     }
 
     -- lsp for neovim plugins
