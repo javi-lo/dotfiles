@@ -25,6 +25,7 @@ return {
 
       if client.name == 'clangd' then
         vim.keymap.set('n', '<leader>o',  '<cmd>ClangdSwitchSourceHeader<cr>', opts)
+        vim.keymap.set('n', '<leader>O',  '<cmd>tab split | ClangdSwitchSourceHeader<cr>', opts)
       end
     end
 
