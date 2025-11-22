@@ -1,8 +1,23 @@
+# exports
+export PROMPT="%F{168}%n%f%F{223}@%f%F{141}%m%f %F{37}%~%f %F{223}%#%f "
+
 # rust
 source ~/.cargo/env
 
+# aliases
 alias tn="tmux new nvim ."
 
 alias build="cmake -B build && cmake --build build"
 alias clean="git clean -dfX"
 alias cleaner="git clean -dfx"
+
+alias ls='ls -G'
+alias ll='ls -lG'
+alias la='ls -laG'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+alias diff='diff --color=auto'
+
